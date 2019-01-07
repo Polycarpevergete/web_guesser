@@ -11,6 +11,5 @@ y = rand(101)
 end
 
 get '/' do
-    "hello, World!"
-    "THE SECRET NUMBER IS #{x} where #{y} is the secret number"
+    erb :index, :locals => {:x => x}
 end
