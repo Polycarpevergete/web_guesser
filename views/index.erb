@@ -1,8 +1,24 @@
 <html>
-<head></head>
+<head>
+<style>
+body {
+    background :<%= color %>;
+}
+</style>
+</head>
 <body>
+<form>
+<input type = 'text' name = 'guess' />
+<input type = 'submit' value = 'Guess!' />
+</form>
 <p>
-THE SECRET NUMBER IS <%= x %>    
+THE SECRET NUMBER IS <%= x %>
+</p>
+<p>
+the guess IS <%=params["guess"]%>
+</p>
+<p>
+<%= message %>
 </p>
 </body>
 </html>
