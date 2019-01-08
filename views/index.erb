@@ -11,7 +11,6 @@ body {
 <input type = 'text' name = 'guess' />
 <input type = 'submit' value = 'Guess!' />
 </form>
-<p>
 THE SECRET NUMBER IS <%= x %>
 </p>
 <p>
@@ -19,6 +18,13 @@ the guess IS <%=params["guess"]%>
 </p>
 <p>
 <%= message %>
+</p>
+<p>
+Il reste <%= counter %> <%= reinitialize_win %> <%= reinitialize_loose %> essais 
+</p>
+<p>
+<%= winner %>
+<%= looser %>
 </p>
 </body>
 </html>
